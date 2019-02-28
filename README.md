@@ -36,6 +36,11 @@ output bbH_test
 exit
 
 # Further instructions
+     Delete bbH_test folder, copy bbH folders under main MG5 directory and go to bbH4FS_yb2 or bbH4FS_ybyt folder.
+
+     The following applies to both
+     folders bbH4FS_yb2 and bbH4FS_ybyt, go inside one of the two and:
+
      First:
 
        a) adjust mg5_path path in Cards/amcatnlo_configuration.txt
