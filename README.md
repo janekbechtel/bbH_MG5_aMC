@@ -34,3 +34,25 @@ output bbH_test
 
 
 exit
+
+# Further instructions
+     First:
+
+       a) adjust mg5_path path in Cards/amcatnlo_configuration.txt
+
+       b) if want to use lhapdf (to access PDF4LHC_nlo_nf4 (92000)) add in amcatnlo_configuration.txt
+       lhapdf = /afs/cern.ch/cms/slc6_amd64_gcc530/external/lhapdf/6.1.6-ikhhed/bin/lhapdf-config     
+       (see location of lhapdf with scram tool info lhapdf; setenv SCRAM_ARCH slc6_amd64_gcc530 - setup compiler used for 6.1.6. CMSSW_8_0_3) 
+
+       c) comment fastjet setting
+
+     Run the process with 
+
+        ./bin/generate_events
+
+     Results (and event files) will be found in: Events/run_*
+
+    Inputs can be set in:
+       Cards/param_card.dat
+       Cards/run_card.dat
+      (Cards/shower_card.dat -- for shower inputs in case you run the shower via MG5_aMC)
